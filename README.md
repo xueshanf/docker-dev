@@ -2,7 +2,8 @@
 
 ### Overview
 
-We are going to use a Ubuntu Vagrant VM as Docker host and us an orchestration script to manage the following applications in the docker environment:
+We are going to use a Ubuntu Vagrant VM as Docker host and use an orchestration 
+script 'dk' to manage the following applications in the docker environment:
 
 * Private local docker registry
 * Zookeeper - Zookeeper service
@@ -89,6 +90,10 @@ Check status:
 Stop all dockers:
 
        sudo /vagrant/bin/dk stop
+
+Wipe clean all containers and images
+
+       sudo /vagrant/bin/docker_clean
 
 ### How to add new docker application 
 
